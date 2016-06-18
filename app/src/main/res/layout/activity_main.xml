@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolBar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.houshuai.qianfengfirstapp.MainActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/tb_show"
+    toolBar:logo="@mipmap/ic_launcher"
+    toolBar:navigationIcon="@mipmap/ic_launcher"
+    toolBar:title="121"
+    toolBar:subtitle="15454454"
+    />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_showTitle"
+        android:layout_weight="1"
+
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:id="@+id/rg_title"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_showNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="                       新闻"
+            android:checked="true"
+          android:background="@drawable/selector_checked"
+            />
+        <RadioButton
+            android:id="@+id/rb_showIng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="                        直播"
+            android:background="@drawable/selector_checked"
+            />
+
+        </RadioGroup>
+
+
+</LinearLayout>
